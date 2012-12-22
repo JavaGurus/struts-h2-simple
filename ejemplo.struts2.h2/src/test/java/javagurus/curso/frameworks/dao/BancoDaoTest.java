@@ -11,7 +11,7 @@ import org.junit.Test;
 
 public class BancoDaoTest {
 	private BancoDAO bancoDAO = new BancoDAO();
-	@Test
+	//@Test
 	public void testInsertar() {
 		Banco banco = new Banco();
 		banco.setNombre("Banco 11082012");
