@@ -24,6 +24,8 @@ package javagurus.curso.frameworks.ejemplo.struts2.h2.example;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.config.entities.ActionConfig;
 
+import frameworks.sesion4.Login;
+
 import java.util.Map;
 
 public class LoginTest extends ConfigTest {

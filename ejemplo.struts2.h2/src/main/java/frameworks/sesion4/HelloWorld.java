@@ -1,5 +1,5 @@
 /*
- * $Id: Login.java 739661 2009-02-01 00:06:00Z davenewton $
+ * $Id: HelloWorld.java 739661 2009-02-01 00:06:00Z davenewton $
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -19,41 +19,43 @@
  * under the License.
  */
 
-package javagurus.curso.frameworks.ejemplo.struts2.h2.example;
+package frameworks.sesion4;
 
-public class Login extends ExampleSupport {
+/**
+ * <code>Set welcome message.</code>
+ */
+public class HelloWorld extends ExampleSupport {
 
     public String execute() throws Exception {
-
-        if (isInvalid(getUsername())) return INPUT;
-
-        if (isInvalid(getPassword())) return INPUT;
-
+        setMessage(getText(MESSAGE));
         return SUCCESS;
     }
 
-    private boolean isInvalid(String value) {
-        return (value == null || value.length() == 0);
+    /**
+     * Provide default valuie for Message property.
+     */
+    public static final String MESSAGE = "HelloWorld.message";
+
+    /**
+     * Field for Message property.
+     */
+    private String message;
+
+    /**
+     * Return Message property.
+     *
+     * @return Message property
+     */
+    public String getMessage() {
+        return message;
     }
 
-    private String username;
-
-    public String getUsername() {
-        return username;
+    /**
+     * Set Message property.
+     *
+     * @param message Text to display on HelloWorld page.
+     */
+    public void setMessage(String message) {
+        this.message = message;
     }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    private String password;
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
 }

@@ -22,6 +22,9 @@
 package javagurus.curso.frameworks.ejemplo.struts2.h2.example;
 
 import com.opensymphony.xwork2.ActionSupport;
+
+import frameworks.sesion4.HelloWorld;
+
 import org.apache.struts2.StrutsTestCase;
 
 public class HelloWorldTest extends StrutsTestCase {

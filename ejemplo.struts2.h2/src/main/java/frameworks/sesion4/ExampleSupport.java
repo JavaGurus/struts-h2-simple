@@ -19,7 +19,7 @@
  * under the License.
  */
 
-package javagurus.curso.frameworks.ejemplo.struts2.h2.example;
+package frameworks.sesion4;
 
 import com.opensymphony.xwork2.ActionSupport;
 
